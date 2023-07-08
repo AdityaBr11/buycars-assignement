@@ -37,7 +37,7 @@ exports.login = async (req, res) => {
 
     res.status(200).send({
       success: true,
-      msg: `Welcome back ${user.name}`,
+      msg: user.name,
       token
     });
   } catch (error) {
