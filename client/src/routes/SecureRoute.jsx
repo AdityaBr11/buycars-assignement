@@ -8,11 +8,7 @@ const SecureRoute = ({children}) => {
     if(crediantial===false){
       return <Navigate to={'/login'} />
     }
-    return (
-      <div>
-        {children}
-      </div>
-  )
+    return children
 }
 
 export default SecureRoute

@@ -50,3 +50,12 @@ exports.postOEMS = async (req, res) => {
     sendError(res, 500, err);
   }
 };
+
+exports.getSingleOEMS=async (req,res)=>{
+  try{
+    const oems=await oemsModel.findById(req.params.id);
+    sendResponse(res,201,oems);
+  }catch(err){
+    sendError(res,500,err);
+  }
+}

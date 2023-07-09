@@ -29,6 +29,40 @@ const marketSchema=new mongoose.Schema({
         type:Number,
         required:true
     },
+    Title:{
+        type:String,
+        required:true
+    },
+    Img:{
+        public_id: {
+            type: String,
+            require: true,
+          },
+          url: {
+            type: String,
+            require: true,
+          },
+    },
+    des1:{
+        type:String,
+        required:true
+    },
+    des2:{
+        type:String,
+        required:true
+    },
+    des3:{
+        type:String,
+        required:true
+    },
+    des4:{
+        type:String,
+        required:true
+    },
+    des5:{
+        type:String,
+        required:true
+    },
     Odometer:{
         type:Number,
         required:true

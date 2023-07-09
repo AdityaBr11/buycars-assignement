@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Oem from "../pages/Oem";
 import Inventory from "../pages/Inventory";
 import SecureRoute from "./SecureRoute";
+import OemDetail from "../pages/OemDetail";
 
 const AllRoutes = () => {
   return (
@@ -29,6 +30,17 @@ const AllRoutes = () => {
             <SecureRoute>
               <Navbar />
               <Oem />
+            </SecureRoute>
+          </>
+        }
+      />
+      <Route
+        path="/oem/:id"
+        element={
+          <>
+            <SecureRoute>
+              <Navbar />
+              <OemDetail/>
             </SecureRoute>
           </>
         }

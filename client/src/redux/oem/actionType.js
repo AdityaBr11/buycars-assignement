@@ -1,0 +1,8 @@
+
+export const OEM_REQ="OEM_REQ";
+export const OEM_SUCCESS="OEM_SUCCESS";
+export const OEM_FAIL="OEM_FAIL";
+
+export const SINGLE_OEM_REQ="SINGLE_OEM_REQ";
+export const SINGLE_OEM_SUCCESS="SINGLE_OEM_SUCCESS";
+export const SINGLE_OEM_FAIL="SINGLE_OEM_FAIL";
